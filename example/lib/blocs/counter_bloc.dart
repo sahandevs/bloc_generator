@@ -1,6 +1,8 @@
 import 'package:bloc_generator_annotation/bloc_generator_annotation.dart';
 import 'package:rxdart/subjects.dart';
 
+part 'counter_bloc.bloc.dart';
+
 @BLoC()
 class CounterBloc {
 

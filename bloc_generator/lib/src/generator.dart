@@ -16,6 +16,7 @@ class BLoCGenerator extends GeneratorForAnnotation<bloc.BLoC> {
     ConstantReader annotation,
     BuildStep buildStep,
   ) {
+    print("builder ***********************");
     return "";
   }
 }
