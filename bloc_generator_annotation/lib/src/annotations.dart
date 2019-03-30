@@ -1,6 +1,6 @@
 class BLoC {
 
-  BLoC();
+  const BLoC();
 
 }
 
@@ -8,12 +8,18 @@ class State {
 
   final bool generateStateBuilder;
 
-  State({this.generateStateBuilder = true});
+  const State({this.generateStateBuilder = true});
 
 }
 
 class Event {
 
-  Event();
+  const Event();
+
+}
+
+class Dispose {
+
+  const Dispose();
 
 }
