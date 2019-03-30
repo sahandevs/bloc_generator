@@ -19,6 +19,7 @@ environment:
 dependencies:
   rxdart: ^0.21.0
   bloc_generator_annotation: ^1.0.0
+  bloc_generator_flutter_helper: ^0.0.1
   flutter:
     sdk: flutter
 
@@ -38,6 +39,8 @@ dependency_overrides:
     path: ../bloc_generator_annotation
   bloc_generator:
     path: ../bloc_generator
+  bloc_generator_flutter_helper:
+    path: ../bloc_generator_flutter_helper
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
