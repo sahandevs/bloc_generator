@@ -1,3 +1,5 @@
+import 'package:example/blocs/counter_bloc.dart';
+import 'package:example/blocs/dec_bloc.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -23,19 +25,11 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _MyHomePageState extends State<MyHomePage> with DecBlocMixin {
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  void _decrementCounter() {
-    setState(() {
-      _counter--;
-    });
+  dispose() {
+    bloc.dispose();
+    super.dispose();
   }
 
   @override
@@ -51,10 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            builder_counter(
+              initialData: [],
+              builder: (context, snapshot) => Text(snapshot.data.toString())
+            )
           ],
         ),
       ),
@@ -62,13 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           FloatingActionButton(
-            onPressed: _incrementCounter,
+            onPressed: () => bloc.add(10),
             tooltip: 'Increment',
             child: Icon(Icons.add),
           ),
           SizedBox(height: 15),
           FloatingActionButton(
-            onPressed: _decrementCounter,
+            onPressed: () => bloc.remove(10),
             tooltip: 'Decrement',
             child: Icon(Icons.remove),
           ),
@@ -76,4 +70,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+
+  @override
+  void dispose() {
+    bloc.dispose();
+    super.dispose();
+  }
+
 }

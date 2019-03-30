@@ -10,12 +10,6 @@ class CounterBloc {
 
   BehaviorSubject<int> counter = BehaviorSubject<int>.seeded(0);
 
-  Stream<int> get test => _testStream();
-
-  Stream<int> _testStream() async* {
-    yield 0;
-  }
-
   void add() {
     counter.value += 1;
   }
