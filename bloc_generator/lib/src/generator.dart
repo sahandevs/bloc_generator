@@ -21,7 +21,7 @@ String stateTemplate(String name, DartType type) =>
 
 String stateBuilderTemplate(String name, DartType type) {
   String genericType =
-      (type as ParameterizedType).typeParameters.first.displayName;
+      (type as ParameterizedType).typeArguments.first.displayName;
   String helperType = "StreamBuilderHelper<$genericType>";
   String helperBuilder = "$helperType(stream: $INSTANCE_NAME.$name)";
   return "$helperType get $STATE_BUILDER_PREFIX$name => $helperBuilder;";
