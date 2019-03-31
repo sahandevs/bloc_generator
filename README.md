@@ -84,5 +84,4 @@ class Widget extends StatelessWidget with TestBlocMixin {}
 
 - FULL DOCUMENTATION
 
-## Hacky way to use with Android Studio's Run Configurations
-TODO
+[Hacky way to use with Android Studio's Run Configurations](./docs/android_studio_run_configuration.md)

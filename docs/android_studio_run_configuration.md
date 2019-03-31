@@ -1,0 +1,15 @@
+- Open your flutter project
+- in the toolbar click on your project name -> `Edit Configuration`
+- click `+` in the top left dialog then click `Flutter`
+- point Data entrypoint to your project `lib/main.dart`
+- in the `Before Lunch` section click `+` the select `External Program`
+- click `+` in the new dialog
+- Windows :
+    - Name: `Code Generator`
+    - Program: `cmd`
+    - Arguments: `/c flutter packages pub run build_runner watch`
+    - Working Directory: your project's root directory
+- click `OK` and close all dialogs
+- run your application
+- then change run configuration and run `Code Generator`
+- and done!
