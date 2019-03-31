@@ -1,5 +1,7 @@
 name: example
 description: bloc_generator example
+author: sahandevs<sahandevs@gmail.com>
+homepage: https://github.com/SahandAkbarzadeh/bloc_generator
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
