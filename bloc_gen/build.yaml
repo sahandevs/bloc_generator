@@ -1,8 +1,8 @@
 # Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
 builders:
   bloc_generator:
-    target: ":bloc_generator"
-    import: "package:bloc_generator/bloc_generator.dart"
+    target: ":bloc_gen"
+    import: "package:bloc_gen/bloc_generator.dart"
     builder_factories: ["blocGeneratorFactory"]
     build_extensions: {".dart": [".bloc.dart"]}
     auto_apply: root_package
