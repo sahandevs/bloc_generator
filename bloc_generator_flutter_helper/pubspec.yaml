@@ -1,8 +1,8 @@
 name: bloc_generator_flutter_helper
-description: A new Flutter package.
-version: 0.0.1
-author:
-homepage:
+description: Helper Class for  Bloc Generator
+version: 1.0.0
+author: sahandevs<sahandevs@gmail.com>
+homepage: https://github.com/SahandAkbarzadeh/bloc_generator
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

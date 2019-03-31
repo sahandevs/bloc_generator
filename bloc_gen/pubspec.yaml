@@ -1,4 +1,4 @@
-name: bloc_generator
+name: bloc_gen
 version: 1.0.0
 author: Sahandevs <sahandevs@gmail.com>
 description: >-
@@ -10,9 +10,6 @@ environment:
 dependencies:
   build: ^1.0.0
   source_gen: ^0.9.0
-  bloc_generator_annotation: ^2.3.0
+  bloc_generator_annotation: any
   dart_style: ^1.0.10
 
-dependency_overrides:
-  bloc_generator_annotation:
-    path: ../bloc_generator_annotation
