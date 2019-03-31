@@ -1,5 +1,5 @@
 name: bloc_gen
-version: 1.0.0
+version: 1.0.1
 author: Sahandevs <sahandevs@gmail.com>
 description: >-
   Automatically generate BLoC patterns.
