@@ -14,7 +14,7 @@ dev_dependencies:
   bloc_gen: ^1.0.1
 
 ```
-the run
+then run
 
 ```sh
 flutter packages get
